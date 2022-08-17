@@ -16,6 +16,14 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ('user_id', 'password', 'username', 'email')
         extra_kwargs = {"password": {"write_only": True}}
 
+    def create(self, validated_data):
+        user = User.objects.create_user(
+            username=validated_data['username'],
+            password=validated_data['password'],
+            email=validated_data['email'],
+        )
+        return user
+
 
 # 채용공고 전체 목록
 class JobpostingSerializer(serializers.ModelSerializer):

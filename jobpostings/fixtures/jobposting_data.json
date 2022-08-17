@@ -1,0 +1,67 @@
+[
+{
+  "model": "jobpostings.jobposting",
+  "pk": 1,
+  "fields": {
+    "create_time": "2022-08-12T07:42:37.365Z",
+    "update_time": "2022-08-12T10:40:55.862Z",
+    "company": 1,
+    "position": "백엔드 주니어 개발자",
+    "reward": 1000000,
+    "content": "원티드랩에서 백엔드 주니어 개발자를 채용합니다. 자격요건은..",
+    "skill": "Django"
+  }
+},
+{
+  "model": "jobpostings.jobposting",
+  "pk": 2,
+  "fields": {
+    "create_time": "2022-08-12T07:43:30.948Z",
+    "update_time": "2022-08-12T07:43:30.948Z",
+    "company": 3,
+    "position": "Django 백엔드 개발자",
+    "reward": 1000000,
+    "content": "네이버에서 백엔드 주니어 개발자를 채용합니다. 자격요건은..",
+    "skill": "Django"
+  }
+},
+{
+  "model": "jobpostings.jobposting",
+  "pk": 3,
+  "fields": {
+    "create_time": "2022-08-12T07:44:32.556Z",
+    "update_time": "2022-08-12T07:44:32.556Z",
+    "company": 2,
+    "position": "프론트엔드 개발자",
+    "reward": 500000,
+    "content": "원티드코리아에서 프론트엔드 개발자를 채용합니다. 자격요건은..",
+    "skill": "javascript"
+  }
+},
+{
+  "model": "jobpostings.jobposting",
+  "pk": 4,
+  "fields": {
+    "create_time": "2022-08-12T07:45:25.030Z",
+    "update_time": "2022-08-12T07:45:25.030Z",
+    "company": 4,
+    "position": "Django 백엔드 개발자",
+    "reward": 500000,
+    "content": "카카오에서 백엔드 주니어 개발자를 채용합니다. 자격요건은..",
+    "skill": "Python"
+  }
+},
+{
+  "model": "jobpostings.jobposting",
+  "pk": 5,
+  "fields": {
+    "create_time": "2022-08-12T11:28:43.536Z",
+    "update_time": "2022-08-12T11:28:43.536Z",
+    "company": 1,
+    "position": "프론트엔드 개발자",
+    "reward": 1500000,
+    "content": "원티드랩에서 프론트엔드 주니어 개발자를 채용합니다. 자격요건은..",
+    "skill": "javascript"
+  }
+}
+]

@@ -1,0 +1,46 @@
+[
+{
+  "model": "jobpostings.company",
+  "pk": 1,
+  "fields": {
+    "create_time": "2022-08-12T07:41:11.600Z",
+    "update_time": "2022-08-12T07:41:11.600Z",
+    "name": "원티드랩",
+    "country": "한국",
+    "region": "서울"
+  }
+},
+{
+  "model": "jobpostings.company",
+  "pk": 2,
+  "fields": {
+    "create_time": "2022-08-12T07:41:23.338Z",
+    "update_time": "2022-08-12T07:41:23.338Z",
+    "name": "원티드코리아",
+    "country": "한국",
+    "region": "부산"
+  }
+},
+{
+  "model": "jobpostings.company",
+  "pk": 3,
+  "fields": {
+    "create_time": "2022-08-12T07:41:32.901Z",
+    "update_time": "2022-08-12T07:41:32.901Z",
+    "name": "네이버",
+    "country": "한국",
+    "region": "판교"
+  }
+},
+{
+  "model": "jobpostings.company",
+  "pk": 4,
+  "fields": {
+    "create_time": "2022-08-12T07:41:42.069Z",
+    "update_time": "2022-08-12T07:41:42.069Z",
+    "name": "카카오",
+    "country": "한국",
+    "region": "판교"
+  }
+}
+]

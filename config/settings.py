@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
     'jobpostings.apps.JobpostingsConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

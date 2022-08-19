@@ -33,7 +33,7 @@ class JobpostingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Jobposting
-        exclude = ['create_time', 'update_time']
+        exclude = ['create_time', 'update_time', 'content', 'company', 'apply']
 
 
 # 채용공고 등록
@@ -47,7 +47,7 @@ class JobpostingCreateSerializer(serializers.ModelSerializer):
 class JobpostingUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Jobposting
-        exclude = ['create_time', 'update_time']
+        exclude = ['create_time', 'update_time', 'company']
 
 
 # 채용공고 상세정보
@@ -64,7 +64,7 @@ class JobpostingDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Jobposting
-        exclude = ['create_time', 'update_time']
+        exclude = ['create_time', 'update_time', 'company']
 
 
 # 채용공고 지원

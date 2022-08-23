@@ -176,18 +176,50 @@
 
 
 ### Modeling
-![Untitled (8)](https://user-images.githubusercontent.com/83492367/185120399-8f680ef9-df7b-4927-bd31-bf9a70c93770.png)
+![ERD](https://user-images.githubusercontent.com/83492367/186085456-6cc3194e-cb5c-4af2-b313-5319744f4306.png)
+
 
 ### API Reference
 [API 명세서 링크](https://documenter.getpostman.com/view/21842492/VUqoQdqD)
 
 ###   Requirements Analysis
 
--   채용공고를 기준으로 해당 자원에 관한 전반적인 CRUD를 요구하고 있다고 판단했으며,
+- 채용공고를 기준으로 해당 자원에 관한 전반적인 CRUD를 요구하고 있다고 판단했으며,
 이를 위해 `회사`, `사용자`, `채용공고`, `지원`의 4가지 테이블로 모델링
     
--   해당 서비스를 이용하는 회사와 사용자의 입장에서의 서비스 이용 흐름을 따라  `Apply` 정보에 대한 모델 추가 정의
+- 해당 서비스를 이용하는 회사와 사용자의 입장에서의 서비스 이용 흐름을 따라  `Apply` 정보에 대한 모델 추가 정의
 
 - 서버의 유연성 위해 `Azure database for postgresql flexible server` 이용하여 구현 및 배포
- [바로가기](https://wanted-pre-onboarding.azurewebsites.net) (보안상의 이유로 한시적 운영 예정)
+ [바로가기](https://wanted-pre-onboarding.azurewebsites.net) 
 
+   ( 관리자 ID : manager, PW : 0000으로 admin 이용 가능, 보안상의 이유로 한시적 운영 예정 )
+
+
+### Feature Implementation
+- Company
+  - 회사는 `회사명`, `국가` , `지역`을 등록하고 수정하고 삭제할 수 있습니다.
+  - 자동으로 생성되는 `회사_id`는 수정 할 수 없습니다.
+  - 데이터의 유지ㆍ관리를 위하여 등록, 수정시간이 자동 입력됩니다.
+#
+- User
+  - 사용자는 `사용자이름`, `이메일` , `비밀번호`를 등록하고 수정하고 삭제할 수 있습니다.
+  - 자동으로 생성되는 `사용자_id`는 수정 할 수 없습니다.
+  - 데이터의 유지ㆍ관리를 위하여 등록, 수정시간이 자동 입력됩니다.
+#
+- Jobposting
+  - 회사는 `채용포지션`, `채용보상금` , `채용내용` ,`사용기술` 를 등록하고 수정하고 삭제할 수 있습니다.
+  - 채용공고 등록시 입력한 `회사_id`를 바탕으로 `회사명`, `국가` , `지역`이 자동 입력됩니다.
+  - 채용공고 상세정보에서 `채용내용`, `회사가 올린 다른 채용공고`를 볼 수 있습니다
+  - 자동으로 생성되는 `채용공고_id`는 수정 할 수 없습니다.
+  - 데이터의 유지ㆍ관리를 위하여 등록, 수정시간이 자동 입력됩니다.
+  - Q객체를 통해 `search` 검색 키워드를 이용한 채용공고 검색이 가능합니다. 
+#
+- Apply
+  - `사용자_id`와 `채용공고_id`는 Unique한 집합으로, 사용자는 `채용공고`에 1회만 지원할 수 있습니다.
+  - 지원내역을 삭제할 수는 있으나 수정할 수는 없습니다.
+  - 데이터의 유지ㆍ관리를 위하여 등록, 수정시간이 자동 입력됩니다.
+
+
+### 
+### UML Diagram
+![my_project_want_model](https://user-images.githubusercontent.com/83492367/186100294-14a91ac2-9152-4e7b-b395-ece752621c67.png)

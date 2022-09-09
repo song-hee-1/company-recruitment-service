@@ -191,8 +191,13 @@
 
 - 서버의 유연성 위해 `Azure database for postgresql flexible server` 이용하여 구현 및 배포
  [바로가기](https://wanted-pre-onboarding.azurewebsites.net) 
+ 
+ - 현재는 비용 및 보안 상의 이유로 배포 중단
+   -  배포 화면
+ 
+ ![image](https://user-images.githubusercontent.com/83492367/189332489-1f25032d-0978-487f-b96a-2657906ac632.png)
 
-   ( 관리자 ID : manager, PW : 0000으로 admin 이용 가능, 보안상의 이유로 한시적 운영 예정 )
+
 
 
 ### Feature Implementation
